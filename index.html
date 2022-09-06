@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Audio Translater</title>
+    <meta name="description" content="An audio Translater">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ff8517">
+
+    <link rel="shortcut icon" href="./assets/src/images/icons/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./assets/src/images/icons/icon_512.png">
+
+    <!-- <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'> -->
+
+    <link rel="stylesheet" href="./assets/src/themes/default.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" id="switcher-id" href="">
+</head>
+
+<body>
+    <input type="checkbox" id="fullHeight">
+    <input type="checkbox" id="sidebar">
+    <input type="checkbox" id="closeThemes">
+    <input type="checkbox" id="more-menu-icon">
+    <input type="checkbox" id="toggleNote">
+    <header>
+        <img src="assets/src/images/screenshots/screenshot1.PNG" alt="" srcset="">
+        <div id="custom-info-bar">
+            <div class="img">
+                <img src="assets/src/images/phone1.png" alt="Install to Device" srcset="">
+            </div>
+            <div id="install-app-btn">Install to device</div>
+        </div>
+        <label for="toggleNote" class="open-note">Open Notes App</label>
+
+        <div class="slider">
+            <div class="slider-content">
+                <div class="slide current">
+                    <img src="assets/src/images/bg1.jpg" alt="image" srcset="">
+                    <div class="content">
+                        <img src="assets/src/images/bg1.jpg" alt="image" srcset="">
+                        <h1>Notes Every where</h1>
+                        <p class="text-content">
+                            Click Add new Note, press start, and Speak through your Microphone, the app will listen.
+                        </p>
+                    </div>
+                    <div class="overlay"></div>
+                </div>
+                <div class="slide">
+                    <img src="assets/src/images/waves.jpg" alt="image" srcset="">
+                    <div class="content">
+                        <img src="assets/src/images/waves.jpg" alt="image" srcset="">
+                        <h1>Listen To your Notes</h1>
+
+                        <p class="text-content">
+                            Take notes wherever you go, speak and and tap <strong>Listen</strong> so the application
+                            reads the notes loud.
+                        </p>
+                    </div>
+                    <div class="overlay"></div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <div id="prev"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                    </svg></div>
+                <div id="next"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg></div>
+            </div>
+
+
+        </div>
+
+        <section class="wrapper">
+
+            <div class="container-left sidebar">
+                <label for="sidebar" class="closeSidebar" aria-label="Close Sidebar">
+                    &times;
+                </label>
+
+                <div class="creater">
+                    <p>Namara Grant &copy; 2022</p>
+                </div>
+            </div>
+            <div class="container-right">
+                <div class="top">
+                    <div class="content">
+                        <div class="navbar-top">
+                            <label for="closeThemes" class="open-theme">
+                                <div class="theme-icons">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <span class="theme-label">themes</span>
+                            </label>
+                            <a href="#" class="heading openSpeechModal">Add New Note</a>
+
+                            <label for="sidebar">
+                                <div class="sidebarToggleBtn ">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </label>
+
+                            <div class="more-menu">
+                                <label for="more-menu-icon">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </label>
+
+                                <div class="more-menu-content">
+                                    <h1>Voice Controlled App</h1>
+                                    <p>
+                                        Voice Controlled App
+                                        &copy; 2022 Grant LLC. All rights reserved.
+                                        Chrome is made possible by the speech and synthesis API open source project and
+                                        other open
+                                        source software.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <label for="toggleNote" class="close-note">&times;</label>
+                        </div>
+                        <div class="top-description">
+                            <!-- <p class="page-description">A tiny app that allows you to take notes by recording your voice</p> -->
+                            <h3 class="no-browser-support">Sorry, Your Browser not supported. Try
+                                Google Chrome.
+                            </h3>
+                        </div>
+
+
+                        <div class="box speech-modal">
+                            <div class="speech-modalcontent">
+                                <span class="close-speech-modal" aria-label="close Modal">&times;</span>
+                                <div class="input-single">
+                                    <textarea id="note-textarea"
+                                        placeholder="Create a new note by typing or using voice recognition."></textarea>
+                                </div>
+
+                                <div class="btn-content">
+                                    <div class="btn" id="start-record-btn" title="Start Recording">
+                                        <span class="text">Start</span><i class='bx bx-microphone'></i>
+                                    </div>
+                                    <div class="btn" id="pause-record-btn" title="Pause Recording"><span
+                                            class="text">Pause</span>
+                                        <i class='bx bx-pause'></i>
+                                    </div>
+                                    <div class="btn" id="save-note-btn" title="Save Note"><span class="text">save</span>
+                                        <i class='bx bx-save'></i>
+                                    </div>
+                                </div>
+                                <p id="recording-instructions">Press the &nbsp; <strong> Start</strong> &nbsp; button to
+                                    start recording.</p>
+                            </div>
+                            <!-- <h3 class="top-heading">Add New Note</h3> -->
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- <p id="recording-instructions">Press the <strong>Start</strong> button to start recording.</p> -->
+
+                <div class="app">
+                    <div class="notes-content">
+                        <!-- <label for="fullHeight" class="fullHeight">My Notes</label> -->
+                        <div class="scroll-div">
+                            <ul id="notes">
+                                <li>
+                                    <p class="no-notes">You don't have any notes.</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="tab-nav-container">
+                <label for="fullHeight" class="fullHeight">
+                    <div class="tab yellow my-notes">
+                        <i class='bx bx-cog'></i>
+                        <span>Notes</span>
+                    </div>
+                </label>
+
+                <label for="closeThemes" class="close-theme">
+                    <div class="tab pink" title="Sidebar">
+                        <i class='bx bx-chevron-right'></i>
+                        <span>Sidebar</span>
+                    </div>
+                </label>
+            </div>
+
+
+            <div id="theme-modal">
+                <label for="closeThemes" class="close-theme">Close</label>
+
+                <div class="theme-switches">
+
+                    <div class="default-theme theme-color">
+                        <div data-theme="default" class="switch default" id="switch-1"></div>
+                        <span class="theme-color-title">Default</span>
+                    </div>
+                    <div class="blue-theme theme-color">
+                        <div data-theme="blue" class="switch blue" id="switch-6"></div>
+                        <span class="theme-color-title">Blue</span>
+                    </div>
+
+                    <div class="purple-theme theme-color">
+                        <div data-theme="purple" class="switch purple" id="switch-2"></div>
+                        <span class="theme-color-title">Purple</span>
+                    </div>
+
+
+                    <div class="orange-theme theme-color">
+                        <div data-theme="orange" class="switch orange" id="switch-3"></div>
+                        <span class="theme-color-title">Orange</span>
+                    </div>
+
+                    <div class="green-theme theme-color">
+                        <div data-theme="green" class="switch green" id="switch-4"></div>
+                        <span class="theme-color-title">Green</span>
+                    </div>
+
+                    <div class="green-theme theme-color">
+                        <div data-theme="dark" class="switch dark" id="switch-5"></div>
+                        <span class="theme-color-title">Dark</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <label for="closeThemes" class="open-theme-floating-btn">
+                <div class="theme-icons">
+                    <span></span>
+                    <span></span>
+                </div>
+                <span class="theme-label">themes</span>
+            </label>
+
+        </section>
+
+
+
+    </header>
+
+    <script src="./assets/src/js/jquery.js"></script>
+    <script src="./assets/src/js/app.js"></script>
+    <script src="./assets/src/js/index.js"></script>
+
+
+    <!-- <script src="./src/js/index.js"></script> -->
+
+</body>
+
+</html>
