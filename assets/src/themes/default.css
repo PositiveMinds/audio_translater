@@ -284,6 +284,37 @@ header .close-note {
   backdrop-filter: blur(8px);
 }
 /*Media queries=======================*/
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) and (-webkit-min-device-pixel-ratio: 2) {
+  header .open-note {
+    margin-top: 20%;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    padding: 0.2rem;
+    box-shadow: 0 0 0.8rem 0 rgba(0, 0, 0, 0.125);
+    width: 60%;
+  }
+
+  header #custom-info-bar {
+    margin-top: -3rem;
+    height: 40vh;
+  }
+
+  header #install-app-btn {
+    width: 100%;
+    margin-top: 1rem;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+
 @media only screen and (max-width: 600px) {
   header .wrapper {
     width: 100vw;
@@ -332,7 +363,7 @@ header .close-note {
 
   header .open-note {
     position: absolute;
-    top: 50%;
+    top: 20%;
     right: 0;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -491,7 +522,6 @@ header .close-note {
     font-weight: 600;
   }
 }
-
 .wrapper {
   width: 40vw;
   height: 95vh;
