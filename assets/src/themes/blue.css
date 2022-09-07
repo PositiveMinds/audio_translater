@@ -284,6 +284,38 @@ header .close-note {
   backdrop-filter: blur(8px);
 }
 /*Media queries=======================*/
+/*Media queries=======================*/
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) and (-webkit-min-device-pixel-ratio: 2) {
+  header .open-note {
+    margin-top: 20%;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    padding: 0.2rem;
+    box-shadow: 0 0 0.8rem 0 rgba(0, 0, 0, 0.125);
+    width: 60%;
+  }
+
+  header #custom-info-bar {
+    margin-top: -3rem;
+    height: 40vh;
+  }
+
+  header #install-app-btn {
+    width: 100%;
+    margin-top: 1rem;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+
 @media only screen and (max-width: 600px) {
   header .wrapper {
     width: 100vw;
@@ -332,7 +364,7 @@ header .close-note {
 
   header .open-note {
     position: absolute;
-    top: 50%;
+    top: 20%;
     right: 0;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -343,6 +375,152 @@ header .close-note {
     text-align: center;
     padding: 1rem;
     font-size: 1.3rem;
+  }
+}
+
+@media only screen and (min-device-width: 601px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1.331) and (-webkit-max-device-pixel-ratio: 1.332) and (orientation: portrait) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+
+  .slide.current .content {
+    transform: translateY(-300px);
+    -webkit-transform: translateY(-300px);
+    -moz-transform: translateY(-300px);
+    -ms-transform: translateY(-300px);
+    -o-transform: translateY(-300px);
+    height: 300px;
+  }
+  .slide.current .content .text-content {
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
+  .slide.current .content h1 {
+    font-size: 2rem;
+  }
+  .slide .content img {
+    width: 100%;
+    /* height: 300px; */
+  }
+
+  header #custom-info-bar {
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    width: 95%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
+  header .wrapper {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+  }
+
+  header .open-note {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+  }
+
+  header #install-app-btn {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+
+  .slide.current .content {
+    transform: translateY(-300px);
+    -webkit-transform: translateY(-300px);
+    -moz-transform: translateY(-300px);
+    -ms-transform: translateY(-300px);
+    -o-transform: translateY(-300px);
+    height: 500px;
+  }
+  .slide.current .content .text-content {
+    font-size: 1.5rem;
+    line-height: 35px;
+  }
+  .slide.current .content h1 {
+    font-size: 2rem;
+  }
+  .slide .content img {
+    width: 100%;
+    height: 300px;
+  }
+
+  header #custom-info-bar {
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    width: 95%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
+  header .wrapper {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+  }
+
+  header .open-note {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+  }
+
+  header #install-app-btn {
+    font-size: 2rem;
+    font-weight: 600;
   }
 }
 
