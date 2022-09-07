@@ -1,6 +1,6 @@
 {
-  "name": "Voice Notes and Speech Synthesis",
-  "short_name": "Voice Notes",
+  "name": "Audio Translater",
+  "short_name": "Audio Translater",
   "display": "standalone",
   "start_url": ".",
   "theme_color": "#ff8517",
