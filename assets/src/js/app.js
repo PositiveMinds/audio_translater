@@ -156,7 +156,7 @@ function renderNotes(notes) {
           <a href="#" class="listen-note" title="Listen to Note">Listen to Note</a>
           <a href="#" class="delete-note" title="Delete">Delete</a>
         </p>
-        <p class="mainContent">${note.content}</p>
+        <p class="mainContent content">${note.content}</p>
       </li>`;
     });
   } else {
