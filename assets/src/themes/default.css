@@ -1167,27 +1167,80 @@ header .close-note {
   display: none;
 }
 
+.theme-modal-content {
+  width: 95%;
+  height: 40vh;
+  position: relative;
+}
+
+.modal-heading {
+  color: var(--dark);
+  position: relative;
+  left: 50%;
+  top: -1rem;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  width: 95%;
+  background: var(--white);
+  padding: 0.2rem;
+  z-index: 1;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+#theme-modal .theme-switches {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  touch-action: auto;
+  overflow-y: auto;
+  width: 95%;
+  height: 100%;
+  background: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.189);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding: 2rem 1rem;
+}
+
 #theme-modal .close-theme {
-  width: fit-content;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
   place-items: center;
   position: absolute;
-  display: grid;
-  top: 12rem;
-  right: 3rem;
-  font-size: 0.8rem;
+
+  top: -0.995rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  padding-bottom: 2.5rem;
   color: var(--dark-text);
-  background: black;
-  padding: 0.125rem;
+  background: transparent;
+
   cursor: pointer;
   font-weight: 500;
   text-transform: uppercase;
-  padding: 0.3rem;
   border-radius: 0.3rem;
   -webkit-border-radius: 0.3rem;
   -moz-border-radius: 0.3rem;
   -ms-border-radius: 0.3rem;
   -o-border-radius: 0.3rem;
-  color: white;
+  z-index: 1;
 }
 
 .open-theme {
@@ -1268,31 +1321,6 @@ header .close-note {
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
 }
 
-#theme-modal .theme-switches {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 95%;
-  overflow-x: auto;
-  height: fit-content;
-  background: var(--white);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.189);
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  padding: 2rem 1rem;
-  touch-action: auto;
-}
 #theme-modal .switch {
   /* border: 2px solid black; */
   border-radius: 50px;
