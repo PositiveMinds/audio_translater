@@ -11,8 +11,6 @@
     <link rel="shortcut icon" href="./assets/src/images/icons/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="./assets/src/images/icons/icon_512.png">
 
-    <!-- <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'> -->
-
     <link rel="stylesheet" href="./assets/src/themes/default.css">
     <link rel="manifest" href="manifest.json">
     <link rel="manifest" href="manifest.json" />
@@ -26,7 +24,7 @@
     <input type="checkbox" id="more-menu-icon">
     <input type="checkbox" id="toggleNote">
     <header>
-        
+
         <div id="custom-info-bar">
             <div class="img">
                 <img src="assets/src/images/phone1.png" alt="Install to Device" srcset="">
@@ -119,9 +117,9 @@
                                 </label>
 
                                 <div class="more-menu-content">
-                                    <h1>Voice Controlled App</h1>
+                                    <h1>Audio Translater</h1>
                                     <p>
-                                        Voice Controlled App
+                                        Audio Translater App
                                         &copy; 2022 Grant LLC. All rights reserved.
                                         Chrome is made possible by the speech and synthesis API open source project and
                                         other open
@@ -133,7 +131,6 @@
                             <label for="toggleNote" class="close-note">&times;</label>
                         </div>
                         <div class="top-description">
-                            <!-- <p class="page-description">A tiny app that allows you to take notes by recording your voice</p> -->
                             <h3 class="no-browser-support">Sorry, Your Browser not supported. Try
                                 Google Chrome.
                             </h3>
@@ -163,7 +160,6 @@
                                 <p id="recording-instructions">Press the &nbsp; <strong> Start</strong> &nbsp; button to
                                     start recording.</p>
                             </div>
-                            <!-- <h3 class="top-heading">Add New Note</h3> -->
 
                         </div>
                     </div>
@@ -171,11 +167,11 @@
 
                 </div>
 
-                <!-- <p id="recording-instructions">Press the <strong>Start</strong> button to start recording.</p> -->
+
 
                 <div class="app">
                     <div class="notes-content">
-                        <!-- <label for="fullHeight" class="fullHeight">My Notes</label> -->
+
                         <div class="scroll-div">
                             <ul id="notes">
                                 <li>
@@ -206,42 +202,45 @@
                 </label>
             </div>
 
-
             <div id="theme-modal">
-                <label for="closeThemes" class="close-theme">Close</label>
+                <div class="theme-modal-content">
+                    <h4 class="modal-heading">Choose theme</h4>
 
-                <div class="theme-switches">
+                    <label for="closeThemes" class="close-theme">&times;</label>
 
-                    <div class="default-theme theme-color">
-                        <div data-theme="default" class="switch default" id="switch-1"></div>
-                        <span class="theme-color-title">Default</span>
+                    <div class="theme-switches">
+
+                        <div class="default-theme theme-color">
+                            <div data-theme="default" class="switch default" id="switch-1"></div>
+                            <span class="theme-color-title">Default</span>
+                        </div>
+                        <div class="blue-theme theme-color">
+                            <div data-theme="blue" class="switch blue" id="switch-6"></div>
+                            <span class="theme-color-title">Blue</span>
+                        </div>
+
+                        <div class="purple-theme theme-color">
+                            <div data-theme="purple" class="switch purple" id="switch-2"></div>
+                            <span class="theme-color-title">Purple</span>
+                        </div>
+
+
+                        <div class="orange-theme theme-color">
+                            <div data-theme="orange" class="switch orange" id="switch-3"></div>
+                            <span class="theme-color-title">Orange</span>
+                        </div>
+
+                        <div class="green-theme theme-color">
+                            <div data-theme="green" class="switch green" id="switch-4"></div>
+                            <span class="theme-color-title">Green</span>
+                        </div>
+
+                        <div class="green-theme theme-color">
+                            <div data-theme="dark" class="switch dark" id="switch-5"></div>
+                            <span class="theme-color-title">Dark</span>
+                        </div>
+
                     </div>
-                    <div class="blue-theme theme-color">
-                        <div data-theme="blue" class="switch blue" id="switch-6"></div>
-                        <span class="theme-color-title">Blue</span>
-                    </div>
-
-                    <div class="purple-theme theme-color">
-                        <div data-theme="purple" class="switch purple" id="switch-2"></div>
-                        <span class="theme-color-title">Purple</span>
-                    </div>
-
-
-                    <div class="orange-theme theme-color">
-                        <div data-theme="orange" class="switch orange" id="switch-3"></div>
-                        <span class="theme-color-title">Orange</span>
-                    </div>
-
-                    <div class="green-theme theme-color">
-                        <div data-theme="green" class="switch green" id="switch-4"></div>
-                        <span class="theme-color-title">Green</span>
-                    </div>
-
-                    <div class="green-theme theme-color">
-                        <div data-theme="dark" class="switch dark" id="switch-5"></div>
-                        <span class="theme-color-title">Dark</span>
-                    </div>
-
                 </div>
             </div>
 
@@ -254,17 +253,11 @@
             </label>
 
         </section>
-
-
-
     </header>
 
     <script src="./assets/src/js/jquery.js"></script>
     <script src="./assets/src/js/app.js"></script>
     <script src="./assets/src/js/index.js"></script>
-
-
-    <!-- <script src="./src/js/index.js"></script> -->
 
 </body>
 
